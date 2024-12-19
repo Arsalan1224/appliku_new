@@ -14,7 +14,6 @@ COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 COPY . /code/
 # Make sure the Python script is executable (optional, if needed)
-RUN chmod +x daily_scraping_module.py
 
 # Set the default command to run the Python script
 CMD ["python", "daily_scraping_module.py"]
